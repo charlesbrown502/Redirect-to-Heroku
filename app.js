@@ -1,7 +1,7 @@
 // Function to validate src parameter
 function validateSrc() {
     if (!unr) {
-        unr = "Itz-fork";
+        unr = "XZ_Bots";
         return
     }
     let spl = unr.split("/");
@@ -12,10 +12,10 @@ function validateSrc() {
 
 // Function to setup fork button
 function setupForkButton() {
-    if (unr == "Itz-fork") {
-        document.getElementById("fork").innerHTML = `<a class="github-button" href="https://github.com/Itz-fork" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size='large' aria-label="Follow @Itz-fork on GitHub">Follow @Itz-fork</a>`;
+    if (unr == "XZ_Bots") {
+        document.getElementById("fork").innerHTML = `<a class="telegram-button" href="https://telegram.me/xz_bots" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size='large' aria-label="Subscribe @XZ_Bots on Telegram">Subscribe @XZ_Bots</a>`;
     } else {
-        document.getElementById("fork").innerHTML = `<a class='github-button' href='https://github.com/${unr}' data-color-scheme='no-preference: dark_high_contrast; light: dark_dimmed; dark: dark_dimmed;' data-icon='octicon-repo-forked' data-size='large' data-show-count='true' aria-label='Fork ${unr} on GitHub'>Fork it!</a>`;
+        document.getElementById("fork").innerHTML = `<a class='telegram-button' href='https://telegram.me/${unr}' data-color-scheme='no-preference: dark_high_contrast; light: dark_dimmed; dark: dark_dimmed;' data-icon='octicon-repo-forked' data-size='large' data-show-count='true' aria-label='Fork ${unr} on GitHub'>Fork it!</a>`;
     }
 }
 
